@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Premiery</title>
+
+</head>
+<header>
+    <h1 style="text-align: center;font-size: 100px;" >Premiery Filmowe</h1>
+    <h1 id="nowosci" class="interaktywne">Nowości</h1>
+    <div style="background-color: cadetblue;display: none;" id="nowosci1" >
+        <table class="wieksza-tablica">
+            <tr>
+                <th>Tytół</th>
+                <th>Data premiery</th>
+                <th>Reżyser/Reżyserzy</th>
+            </tr>    
+            <tr>
+                <td>Gru i Minionki: Pod przykrywką</td>
+                <td>05.07.2024</td>
+                <td>Chris Renaud,Patrick Delage</td>
+            </tr>
+            <tr>
+                <td>W głowie się nie mieści 2</td>
+                <td>14.06.2024</td>
+                <td>Kelsey Mann</td>
+            </tr>
+            <tr>
+                <td>Mufasa: Król Lew</td>
+                <td>Przewidywana data premiery 20.12.2024</td>
+                <td>Barry Jenkins</td>
+            </tr>
+        
+        
+        </table>
+    </div>
+    
+    <h1 id="Trailery" class="interaktywne">Trailery</h1>
+        <div id="Trailery1" style="display: none;">
+            <h1>Gru i Minionki: Pod przykrywką</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8MoJCMc4uTI?si=tkGbsimmFt5nlJJ2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h1>W głowie się nie mieści 2</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/j5Dx0cdqbdM?si=tGuqylIb9dOcxT05" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/F_qy01RcA_s?si=DsQWtnQ-691CjkfS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h1>Mufasa: Król Lew</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3DsKT3bQTU0?si=w-o0UHyoKy21biSB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    <h1 id="rejstracja" class="interaktywne">Zarejstruj się lub zaloguj żeby nie przegapić nowości!</h1>
+    <div id="rejstracja1" style="display: none;">
+        <form class=".justyfi">
+            <h1>Wprowadź:</h1>
+            <label for="imie">Imie: </label>
+            <input type="text" id="imie" required><br>
+            <label for="nazwisko">Nazwisko: </label>
+            <input type="text" id="nazwisko" required><br>
+            <label for="pseudonim">Pseudonim: </label>
+            <input type="text" id="pseudonim" required><br>
+            <label for="mail">Adres e-mail: </label>
+            <input type="text" id="mail"><br>
+            <label for="haslo">Hasło:</label>
+            <input type="password" id="haslo" required><br>
+            <input type="submit">
+        </form>
+        <form>
+            <h1>Zaloguj się</h1>
+            <label for="login1">Adres e-mail:</label>
+            <input type="text" id="login1"><br>
+            <label for="login2">Hasło:</label>
+            <input type="password" id="login2"><br>
+            <input type="submit">
+        </form>
+    
+    
+    
+    </div>
+</header>
+<body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+       $(function(){
+        $('#nowosci').click(
+            function(){
+                $("#nowosci1").slideToggle(1500);
+            
+       })
+       })
+       $(function(){
+        $('#Trailery').click(
+            function(){
+                $('#Trailery1').slideToggle(1500)
+            }
+        )
+       })
+       $(function(){
+        $('#rejstracja').click(
+            function(){
+                $('#rejstracja1').slideToggle(1500)
+            }
+        )
+       })
+       alert("Kliknij w elementy z kolroem tła ... są one interaktywne ")
+    </script>
+    <img src="camera.jpg" alt="camera.jpg"> 
+    <audio controls autoplay="true" loop="true" src="midnight-forest-184304.mp3"></audio>
+
+</body>
+<footer>
+</footer>
+</html>
